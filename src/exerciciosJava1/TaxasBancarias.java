@@ -1,3 +1,5 @@
+package exerciciosJava1;
+
 import java.util.Scanner;
 
 public class TaxasBancarias {

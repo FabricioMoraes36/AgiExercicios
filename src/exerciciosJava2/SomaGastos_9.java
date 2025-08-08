@@ -1,3 +1,5 @@
+package exerciciosJava2;
+
 import java.util.Scanner;
 
 public class SomaGastos_9 {
@@ -8,7 +10,7 @@ public class SomaGastos_9 {
         while (true) {
             System.out.println("Digite 1 dos seus gastos:");
             gastos = scanner.nextDouble();
-            if (gastos == -1) {
+            if (gastos <= 0) {
                 System.out.println("Encerrando o programa...");
                 break;
             } else if (gastos > 0) {

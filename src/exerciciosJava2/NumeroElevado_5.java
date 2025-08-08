@@ -1,3 +1,5 @@
+package exerciciosJava2;
+
 import java.util.Scanner;
 
 public class NumeroElevado_5 {
