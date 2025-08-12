@@ -1,4 +1,5 @@
-package exerciciosJava2;
+package Exercicios;
+
 import java.util.Scanner;
 
 public class CaixaEletronico_11 {
