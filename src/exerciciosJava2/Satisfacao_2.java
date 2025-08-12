@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/exerciciosJava2/Satisfacao_2.java
 package exerciciosJava2;
-========
-package Exercicios;
->>>>>>>> 0524111dad170717026556be9b9b7ff21e0835d7:src/Exercicios/Satisfacao_2.java
 
 import java.util.Scanner;
 
@@ -33,7 +29,7 @@ Desenvolva um programa que receba uma nota entre 0 e 5 e mostre uma mensagem cor
                         System.out.println("Aos poucos estamos melhorando e arrumando alguns detalhes para satisfazer cada cliente");
                         break;
                         case 3:
-                            System.out.println("Buscamos sempre o melhor para cada caso dos nossos clientes");
+                            System.out.println("Buscamos sempre o calculo para cada caso dos nossos clientes");
                             break;
                             case 4:
                                 System.out.println("Estamos seguindo em um otimo caminho mas existem pontos que merecem atenção!!");

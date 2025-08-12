@@ -3,7 +3,7 @@ package Matrizes;
 import java.util.Arrays;
 
 public class Matrizes_02 {
-
+//soma todos os valores que o cliente pagou
     public static double totalPago(double[][] array,int cliente){
         double total = 0;
         for (int i = 0; i < array[cliente].length; i++) {
@@ -12,7 +12,7 @@ public class Matrizes_02 {
         }
         return total;
     }
-
+//mostra
     public static double[] totalPagoTodos(double[][]array){
         double[]todos = new double[array.length];
         for (int i = 0; i < array.length ; i++) {
@@ -54,11 +54,9 @@ public class Matrizes_02 {
         array[2][0] = 300;
         array[2][1] = 30;
         array[2][2] = 30;
-        //System.out.println("é o total pago pelo cliente: ");
-        //System.out.println(totalPago(array,2));
-
-        //System.out.println(Arrays.toString(totalPagoTodos(array)));
-
+        System.out.println("é o total pago pelo cliente: ");
+        System.out.println(totalPago(array,2));
+        System.out.println(Arrays.toString(totalPagoTodos(array)));
         System.out.println(clienteComMaiorDivida(array));
     }
 }

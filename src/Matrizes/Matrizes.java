@@ -42,7 +42,7 @@ public class Matrizes {
         array[2][2] = 190.00;
 
         System.out.println("Cada cliente ficou com esse respectivo valor no fim do periodo: " + Arrays.toString(saldoFinalTodos(array)));
-        System.out.println("Saldo final do cliente: " + saldoFinalCliente(array,2));
+        System.out.println("Saldo final do cliente: " + saldoFinalCliente(array,0));
         saldosClientes(array);
 
 

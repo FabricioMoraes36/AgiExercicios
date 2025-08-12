@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/exerciciosJava2/Quadrado_4.java
 package exerciciosJava2;
-========
-package Exercicios;
->>>>>>>> 0524111dad170717026556be9b9b7ff21e0835d7:src/Exercicios/Quadrado_4.java
 
 import java.util.Scanner;
 
