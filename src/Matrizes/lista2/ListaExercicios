@@ -1,0 +1,111 @@
+Exercícios de Vetores Bidimensionais - Setor Financeiro
+
+1. Análise de Saldos em Contas Correntes
+Um banco monitora os saldos diários de N clientes durante M dias em uma matriz double[N][M].
+ Crie um programa que permita:
+Métodos a implementar:
+double saldoFinal(double[][] saldos, int cliente) – retorna o saldo do cliente ao final do período.
+
+
+double[] saldoFinalTodos(double[][] saldos) – retorna o saldo final de todos os clientes.
+
+
+void imprimirExtratoClientes(double[][] saldos) – exibe todos os saldos por cliente em formato tabular.
+
+
+
+2. Controle de Pagamentos de Empréstimos
+Uma matriz double[C][P] armazena os valores pagos por C clientes ao longo de P parcelas de seus empréstimos.
+Métodos a implementar:
+double totalPago(double[][] pagamentos, int cliente) – retorna o valor total pago por um cliente.
+
+
+double[] totalPagoTodos(double[][] pagamentos) – retorna um vetor com o total pago por cada cliente.
+
+
+int clienteMaisAdiantado(double[][] pagamentos) – retorna o índice do cliente com maior soma de pagamentos.
+
+
+
+3. Avaliação de Investimentos Mensais
+Cada linha da matriz double[F][M] representa a evolução mensal da cota de um fundo de investimento ao longo de M meses.
+Métodos a implementar:
+double rentabilidade(double[][] fundos, int fundo) – retorna a variação percentual do fundo entre o 1º e o último mês.
+
+
+int fundoMaisRentavel(double[][] fundos) – retorna o índice do fundo com maior rentabilidade.
+
+
+
+4. Monitoramento de Transações Acima do Limite
+Uma matriz double[N][D] armazena o valor de transações feitas por N clientes durante D dias.
+ Transações acima de R$10.000 devem ser sinalizadas.
+Métodos a implementar:
+boolean[][] transacoesSuspeitas(double[][] transacoes, double limite) – retorna uma matriz booleana com as transações suspeitas.
+
+
+void exibirTransacoesSuspeitas(double[][] transacoes, boolean[][] flags) – exibe cliente, dia e valor de cada transação acima do limite.
+
+
+
+5. Simulação de Juros Compostos Mensais
+Uma matriz double[C][M] armazena os saldos mensais de C clientes, considerando juros compostos.
+Métodos a implementar:
+double calcularJurosMensal(double saldoAnterior, double saldoAtual) – retorna a taxa de juros mensal implícita.
+
+
+double[] jurosMediosClientes(double[][] saldos) – retorna a média de juros mensais de cada cliente.
+
+
+
+6. Distribuição de Receitas por Agência
+Uma matriz double[A][S] representa o total de receitas obtidas por A agências em S segmentos (crédito, tarifas, câmbio etc.).
+Métodos a implementar:
+double[] totalPorAgencia(double[][] receitas) – retorna um vetor com o total arrecadado por cada agência.
+
+
+double[] percentualPorSegmento(double[][] receitas) – retorna o percentual que cada segmento representa no total geral.
+
+
+
+7. Monitoramento de Cartões de Crédito
+Uma matriz double[C][M] registra os gastos de C clientes com cartões de crédito durante M meses.
+Métodos a implementar:
+double gastoTotalCliente(double[][] gastos, int cliente) – retorna o gasto total de um cliente.
+
+
+int clienteMaiorGasto(double[][] gastos) – retorna o índice do cliente com maior gasto acumulado.
+
+
+
+8. Controle de Limite de Crédito por Categoria
+Uma matriz double[N][T] representa os valores gastos por N clientes em T tipos de compra (mercado, viagens, serviços etc.).
+ Normalize os valores para ficar entre 0 e 1, com base no maior gasto total individual.
+Métodos a implementar:
+double gastoMaximoCliente(double[][] gastos, int cliente) – retorna o maior gasto entre as categorias de um cliente.
+
+
+double[][] normalizarGastos(double[][] gastos) – retorna uma nova matriz com os valores normalizados.
+
+
+
+9. Classificação de Risco de Crédito
+Uma matriz int[C][Q] armazena as notas de crédito (0 a 100) de C clientes, avaliadas por Q critérios (renda, histórico, uso de limite etc.).
+Métodos a implementar:
+double mediaNotaCliente(int[][] notas, int cliente) – retorna a média das notas de um cliente.
+
+
+int[] clientesComRiscoBaixo(int[][] notas, double limiar) – retorna os índices dos clientes com média acima do limiar.
+
+
+
+10. Controle de Saques e Depósitos
+Uma matriz double[N][M] armazena movimentações diárias de N contas bancárias (valores positivos são depósitos, negativos são saques).
+Métodos a implementar:
+double totalSaques(double[][] mov) – retorna o total sacado em todas as contas.
+
+
+double totalDepositos(double[][] mov) – retorna o total depositado.
+
+
+double[] saldoFinalContas(double[][] mov) – retorna o saldo final de cada conta.

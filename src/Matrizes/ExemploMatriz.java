@@ -20,7 +20,7 @@ public class ExemploMatriz {
             total += array[i][i];
 
         }
-        System.out.println("A soma da diagonal principal é: " + total);
+        System.out.println("A somarVendasPorMes da diagonal principal é: " + total);
 
        /* for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {

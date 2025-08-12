@@ -1,0 +1,48 @@
+Exercícios de Vetores Bidimensionais (2) - Setor Financeiro
+
+
+ok
+1. Crie um método para preencher uma matriz 2x2 com receitas e despesas. Depois, crie um método que calcule a soma total de todos os elementos da matriz.
+void preencherMatriz(double[][] matriz);
+double calcularSomaTotal(double[][] matriz);
+
+ok
+2. Dada uma matriz 3x4 que representa dívidas mensais de 3 clientes em 4 meses, crie um método para encontrar o maior valor da matriz.
+double encontrarMaiorValor(double[][] matriz);
+
+ok
+3. Crie um método que calcule o total de saldos de uma matriz 3x2 (clientes x meses) e outro método que calcule o saldo médio por cliente (média das linhas).
+double calcularSaldoTotal(double[][] matriz);
+double[] calcularMediaPorCliente(double[][] matriz);
+
+ok
+4. Dada uma matriz 2x3 com preços de produtos em 2 lojas, crie um método para encontrar o menor preço de cada produto (mínimo por coluna).
+double[] encontrarMenorPrecoPorProduto(double[][] matriz);
+
+ok
+5. Crie um método que calcule a média geral de vendas numa matriz 3x3 e outro que calcule a soma total de vendas por vendedor (soma das linhas).
+double calcularMediaTotal(double[][] matriz);
+double[] somarVendasPorVendedor(double[][] matriz);
+
+ok
+6. Dada uma matriz 3x2 com valores investidos em fundos durante 2 trimestres, crie um método que calcule o total investido em cada fundo (soma das linhas).
+double[] calcularTotalPorFundo(double[][] matriz);
+
+ok
+7. Crie um método que encontre a menor taxa de juros numa matriz 2x2 e outro que calcule a média das taxas por mês (média das colunas).
+double encontrarMenorTaxa(double[][] matriz);
+double[] calcularMediaPorMes(double[][] matriz);
+
+ok
+8. Dada uma matriz 3x2 com quantidade de produtos vendidos por vendedor e mês, crie um método para somar o total vendido por mês (soma das colunas).
+int[] somarVendasPorMes(int[][] matriz);
+
+ok
+9. Crie um método que calcule o saldo total acumulado numa matriz 2x3 e outro método que calcule o saldo máximo por conta (máximo por linha).
+double calcularSaldoTotal(double[][] matriz);
+double[] encontrarMaximoPorConta(double[][] matriz);
+
+ok
+10. Dada uma matriz 3x3 que representa pagamentos feitos por clientes em meses diferentes, crie um método para calcular a média total dos pagamentos e outro para encontrar o cliente que mais pagou (máximo por linha).
+double calcularMediaTotal(double[][] matriz);
+int encontrarClienteMaiorPagamento(double[][] matriz);

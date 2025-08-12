@@ -1,0 +1,39 @@
+Matrizes basicamente são arrays de arrays,vetores de vetores
+
+Quando caimos em algum exercicio que pede as linhas da nossa matriz estamos falando sobre matriz.length
+Agora quando falamos sobre as colunas da nossa matriz falamos sobre matriz[i].length,isso nos retorna as colunas
+da linha [i]
+
+por exemplo dada a matriz:
+
+ int[][] matriz = {
+            {1, 20, 300},
+            {4000, 50, 6},
+            {7, 800, 90}};
+Para printar uma matriz usaremos um for aninhado
+
+public static void imprimirMatrizComColchetes(int[][] matriz) {
+    for (int[] linha : matriz) {
+        System.out.print("[");
+        for (int j = 0; j < linha.length; j++) {
+            System.out.print(linha[j]);
+            if (j < linha.length - 1) System.out.print(", ");
+        }
+        System.out.println("]");
+    }
+}
+no caso usamos um for each e um fori normal!
+no for each estamos dizendo: "Uma matriz int[] que se chama linha recebe : matriz, no caso esse matriz é o parametro do metodo que passamos
+e para cada item de matriz,ele ira printar uma chave "[" so para fim de formatação isso n influencia nada alem da exibição no console
+em seguida criamos um for normal que é, j = 0; enquanto j for menor que linha.length, ou seja quando falamos so de "nomedamatriz.length" estamos
+falando sobre as linhas. apos isso colocamos um if para verificar, se j for menor que a nossa matriz - 1(esse matriz - 1 é a mesma coisa que dizer o final da matriz)
+se for menor,ele printa uma virgula, e apos o for terminar tem um sout com a chave "]",que fecha na exibição no console
+
+O for each basicamente esta dizendo que para cada linha da matriz,teremos um vetor,e esse vetor se chama int[] linha
+e como agora cada linha será tratada como um vetor,usamos o for abaixo para percorrer linha.length e isso nos tras cada valor de cada coluna
+
+O retorno no console deve ser algo do tipo:
+
+[1, 20, 300]
+[4000, 50, 6]
+[7, 800, 90]
