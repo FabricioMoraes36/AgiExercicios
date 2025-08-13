@@ -48,3 +48,5 @@ for (int i = 0; i < matriz.length; i++) {        // percorre as linhas (índice 
         System.out.println(n);
     }
 }
+
+Quando o indice varia,esse será o loop externo
