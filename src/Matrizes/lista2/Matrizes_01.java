@@ -2,7 +2,7 @@ package Matrizes.lista2;
 
 import java.util.Arrays;
 
-public class Matrizes {
+public class Matrizes_01 {
     public static double saldoFinalCliente(double[][]meuArray, int cliente) {
         return meuArray[cliente][meuArray[cliente].length - 1];
         }
@@ -27,19 +27,8 @@ public class Matrizes {
 
 
     public static void main(String[] args) {
-        double[][] array = new double[3][3];
+        double[][] array = {{110,20,32},{344,321,2334},{10,60,455}};
 
-        array[0][0] = 10.00;
-        array[0][1] = 10.00;
-        array[0][2] = 10.00;
-
-        array[1][0] = 20.00;
-        array[1][1] = 20.00;
-        array[1][2] = 20.00;
-
-        array[2][0] = 20.00;
-        array[2][1] = 20.00;
-        array[2][2] = 190.00;
 
         System.out.println("Cada cliente ficou com esse respectivo valor no fim do periodo: " + Arrays.toString(saldoFinalTodos(array)));
         System.out.println("Saldo final do cliente: " + saldoFinalCliente(array,0));

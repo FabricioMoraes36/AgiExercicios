@@ -1,10 +1,12 @@
 package Matrizes.lista1;
 
+import java.util.Random;
 public class ex1 {
     public static void preencher(double[][]matriz){
+        Random rand = new Random();
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                double valor = 10;
+                double valor = rand.nextDouble();
                 matriz[i][j] = valor;
                 System.out.println(matriz[i][j]);
             }

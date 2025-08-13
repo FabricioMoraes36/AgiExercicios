@@ -37,7 +37,7 @@ return norm;
     }
 
     public static void main(String[] args) {
-        double[][] matriz ={{10,20,30},{40,50,60},{132,260,3400}};
+        double[][] matriz ={{10,20,30},{40,50},{132,260,3400}};
         System.out.println(gastoMaximoCliente(matriz,2));
         double[][] normalizado = normalizarGastos(matriz);
         for (int i = 0; i < normalizado.length; i++) {
