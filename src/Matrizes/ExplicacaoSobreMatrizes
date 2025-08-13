@@ -50,3 +50,30 @@ for (int i = 0; i < matriz.length; i++) {        // percorre as linhas (índice 
 }
 
 Quando o indice varia,esse será o loop externo
+
+podem haver exercicios em que sera necessario somar somente as linhas ou so as colunas e aqui esta um exemplo base:
+// Soma de cada linha
+    public static double[] somaLinhas(double[][] matriz) {
+        double[] totalLinhas = new double[matriz.length];
+        for (int i = 0; i < matriz.length; i++) {
+            double soma = 0; // sempre começa em zero
+            for (int j = 0; j < matriz[i].length; j++) {
+                soma += matriz[i][j];
+            }
+            totalLinhas[i] = soma;
+        }
+        return totalLinhas;
+    }
+
+    // Soma de cada coluna
+    public static double[] somaColunas(double[][] matriz) {
+        double[] totalColunas = new double[matriz[0].length];
+        for (int j = 0; j < matriz[0].length; j++) {
+            double soma = 0; // sempre começa em zero
+            for (int i = 0; i < matriz.length; i++) {
+                soma += matriz[i][j];
+            }
+            totalColunas[j] = soma;
+        }
+        return totalColunas;
+    }
