@@ -20,10 +20,6 @@ public class ex4 {
     }
     public static void main(String[] args) {
         double[][]matriz ={{15,10},{5,23},{120,150},{1111,222222}};
-
-
-
-
         System.out.println(Arrays.toString(calculo(matriz)));
 
     }
