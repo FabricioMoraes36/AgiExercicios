@@ -4,7 +4,7 @@ public interface OpBancarias {
 
     //Criamos dois metodos que receberão o body na classe que implementar
 
-    void depositar(double valor);
-    void sacar(double valor);
+    public void depositar(double valor);
+    public void sacar(double valor);
 
 }

@@ -53,20 +53,19 @@ public abstract class Conta implements  OpBancarias{
     public void depositar(double valor) {
         System.out.println("Depositando um valor de: " + valor);
         saldo = saldo + valor;
-        System.out.println("Seu saldo atual: " + saldo);
+        System.out.println("Seu saldo atual: " + getSaldo());
     }
-
-    //metodo de saque
     @Override
     public void sacar(double valor) {
 
-        //verifica se o saque não é maior que o saldo ou se o saldo não está negativo
-        if (valor > saldo || saldo <= 0){
-            System.out.println("Saldo insuficiente");
-        }else{
+        if (valor <= 0) {
+            System.out.println("Valor inválido para saque.");
+        } else if (valor > getSaldo()) {
+            System.out.println("Saldo insuficiente.");
+        } else {
+            saldo -= valor;
             System.out.println("Sacando um valor de: " + valor);
-            saldo = saldo - valor;
-            System.out.println("Seu saldo atual: " + saldo);
+            System.out.println("Seu saldo ficou em: " + getSaldo());
         }
 
     }

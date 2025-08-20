@@ -43,6 +43,8 @@ public class Main {
                     sc.nextLine();
                     System.out.println("Digite seu saldo!");
                     saldo = sc.nextDouble();
+                    //O tipo do objeto inicia como Conta
+                    //mas sera um new ContCorrente pq ContaCorrente esta sobre o "guarda-chuva" do pai
                     ContaCorrente corrente = new ContaCorrente(numeroConta, cliente, saldo);
                     int opcaoCorrente = -1;
 

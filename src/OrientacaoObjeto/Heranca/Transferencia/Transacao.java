@@ -1,17 +1,17 @@
-package OrientacaoObjeto.Encapsulamento.TransacaoFinanceira;
+package OrientacaoObjeto.Heranca.Transferencia;
 
 public class Transacao {
     private String id;
-    private String tipo;
     private double valor;
+    private String data;
 
     public Transacao() {
     }
 
-    public Transacao(String id, String tipo, double valor) {
+    public Transacao(String id, double valor, String data) {
         this.id = id;
-        this.tipo = tipo;
         this.valor = valor;
+        this.data = data;
     }
 
     public String getId() {
@@ -22,19 +22,19 @@ public class Transacao {
         this.id = id;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public double getValor() {
         return valor;
     }
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }
