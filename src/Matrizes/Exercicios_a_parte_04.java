@@ -2,7 +2,7 @@ package Matrizes;
 
 import java.util.Arrays;
 
-/*5. Vendas por Produto e Loja (Difícilzinho)
+/*5. Vendas por Pagamento e Loja (Difícilzinho)
 Uma matriz int[P][L] armazena as vendas de P produtos em L lojas.
 Crie métodos para:
 
@@ -49,7 +49,7 @@ public static double[] somaLoja(double[][] matriz) {
 public static int[] maiorProdutoMaiorLoja(double[][] matriz) {
     int[] resultados = new int[2]; // [0] = produto mais vendido, [1] = loja que mais vendeu
 
-    // Produto mais vendido
+    // Pagamento mais vendido
     double[] totalPorProduto = somaPorProduto(matriz);
     int produtoMaisVendido = 0;
     double maiorProduto = totalPorProduto[0];
