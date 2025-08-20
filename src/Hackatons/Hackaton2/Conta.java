@@ -60,11 +60,11 @@ public abstract class Conta implements  OpBancarias{
 
         if (valor <= 0) {
             System.out.println("Valor inválido para saque.");
-        } else if (valor > getSaldo()) {
+        } else if (valor > saldo) {
             System.out.println("Saldo insuficiente.");
         } else {
-            saldo -= valor;
             System.out.println("Sacando um valor de: " + valor);
+            saldo = saldo - valor;
             System.out.println("Seu saldo ficou em: " + getSaldo());
         }
 

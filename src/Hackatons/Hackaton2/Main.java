@@ -60,7 +60,7 @@ public class Main {
                             case 1:
                                 System.out.println("Quanto deseja sacar ? seu saldo atual é de: " + saldo);
                                 double valor = sc.nextDouble();
-                                corrente.sacar(saldo);
+                                corrente.sacar(valor);
                                 break;
                             case 2:
                                 System.out.println("Quanto deseja adicionar na sua conta");
@@ -74,7 +74,7 @@ public class Main {
                                 System.out.println("Encerrando menu da sua conta corrente...");
                                 break;
                             default:
-                                System.out.println("Escolha uma opção valida " + corrente.getTitular());
+                                System.out.println("Escolha uma opção valida ");
                                 break;
                         }
                     }
@@ -124,7 +124,7 @@ public class Main {
                                 break;
                                 //default para o usuario digitar uma opção valida
                             default:
-                                System.out.println("Escolha uma opção valida " + poupanca.getTitular());
+                                System.out.println("Escolha uma opção valida ");
                                 break;
                         }
                     }
