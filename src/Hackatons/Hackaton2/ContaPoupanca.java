@@ -17,7 +17,7 @@ public class ContaPoupanca extends Conta {
     public void aplicarJuros() {
         System.out.println("A poupança tem uma taxa de rendimento de 1%");
         System.out.println("O seu saldo anterior era:" + getSaldo());
-        double juros = getSaldo() * 1.01;
+        double juros = getSaldo() * 0.01;
         setSaldo(getSaldo() + juros);
         System.out.println("Aplicando o juros na sua conta seu saldo vai para:" + getSaldo());
 
