@@ -4,14 +4,17 @@ public class Cliente {
 //atributos
     private String nome;
     private String cpf;
+
 //construtor sem argumentos para poder criar um cliente na main
     public Cliente() {
     }
+
 //construtor com todos os argumentos para criar um cliente
     public Cliente(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
+
 //getters e setters
     public String getNome() {
         return nome;

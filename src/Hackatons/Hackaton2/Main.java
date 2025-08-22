@@ -20,8 +20,8 @@ public class Main {
 
 //Primeiro menu responsavel por criar o objeto Cliente
 
-        System.out.println("Bem vindo ao AgiBasics - sua Conta Poupança ou Corrente!!");
-        System.out.println("Vamos começar Digitando o seu nome caro cliente: ");
+        System.out.println("|  Bem vindo ao AgiBasics - sua Conta Poupança ou Corrente!!  |");
+        System.out.println("---Vamos começar Digitando o seu nome caro cliente--- ");
         nome = sc.nextLine();
         System.out.println("Perfeito!! agora digite o seu cpf por favor...");
         cpf = sc.nextLine();
@@ -31,7 +31,7 @@ public class Main {
 
         while (opcao != 0) {
             System.out.println("Seja bem vindo ao agiBasics " + nome + " !!");
-            System.out.println("Agora escolha uma opção: 1- conta corrente🏧 | 2 - Conta Poupança💹 | 0 - encerrar o AgiBasics 😥");
+            System.out.println("Agora escolha uma opção: 1- conta corrente🏧 | 2 - Conta Poupança💹 | 0 - encerrar o AgiBasics(Já vai?...) 😥");
             opcao = sc.nextInt();
             switch (opcao) {
 
@@ -121,6 +121,7 @@ public class Main {
                                 //encerra a conta
                             case 0:
                                 System.out.println("Encerrando menu da sua conta poupança...");
+                                opcao=0;
                                 break;
                                 //default para o usuario digitar uma opção valida
                             default:

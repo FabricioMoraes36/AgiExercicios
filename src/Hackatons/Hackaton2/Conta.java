@@ -1,18 +1,18 @@
 package Hackatons.Hackaton2;
 
 public abstract class Conta implements  OpBancarias{
-    //atributos
+
+    //atributos//
+
     private String numeroConta;
     private Cliente cliente;
     private double saldo;
 
-
-//construtor sem argumentos para criar o objeto
+    //Construtores
     public Conta() {
     }
 
 
-//construtor com todos os argumentos
     public Conta(String numeroConta, Cliente titular, double saldo) {
         this.numeroConta = numeroConta;
         this.cliente = new Cliente();
@@ -21,6 +21,7 @@ public abstract class Conta implements  OpBancarias{
 
 
 //getters e setters
+
     public String getNumeroConta() {
         return numeroConta;
     }
@@ -45,16 +46,21 @@ public abstract class Conta implements  OpBancarias{
         this.saldo = saldo;
     }
 
-    //metodos
 
+    //METODOS
 
     //metodo de deposito
     @Override
     public void depositar(double valor) {
-        System.out.println("Depositando um valor de: " + valor);
-        saldo = saldo + valor;
-        System.out.println("Seu saldo atual: " + getSaldo());
+        if (valor <= 0){
+            System.out.println("Digite um valor valido para o deposito!!");
+        }else {
+            System.out.println("Depositando um valor de: " + valor);
+            setSaldo(getSaldo() + valor);
+            System.out.println("Seu saldo atual: " + getSaldo());
+        }
     }
+    //metodo de saque
     @Override
     public void sacar(double valor) {
 
@@ -64,14 +70,13 @@ public abstract class Conta implements  OpBancarias{
             System.out.println("Saldo insuficiente.");
         } else {
             System.out.println("Sacando um valor de: " + valor);
-            saldo = saldo - valor;
+            setSaldo(getSaldo() - valor);
             System.out.println("Seu saldo ficou em: " + getSaldo());
         }
 
     }
 
 //metodo abstrato que será usado pelas classes filhas
+
     public abstract void aplicarJuros();
-
-
 }
